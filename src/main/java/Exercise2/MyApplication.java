@@ -15,12 +15,16 @@ public class MyApplication {
 
         System.out.println();
 
-        destroyVehicle(car);
-        destroyVehicle(truck);
+        destroyVehicleCar(car);
+        destroyVehicleTruck(truck);
     }
 
-    public static void destroyVehicle(Vehicle v) {
-        v.destroy();
+    public static void destroyVehicleCar(Vehicle car) {
+    	car.destroy();
+    }
+    
+    public static void destroyVehicleTruck(Vehicle truck) {
+    	truck.destroy();
     }
     
 }
